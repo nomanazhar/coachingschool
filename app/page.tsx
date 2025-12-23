@@ -30,7 +30,7 @@ export default function Home() {
             Learn from experienced officials who understand what it takes to succeed and are dedicated to preparing you for the next level.
           </p>
           <div className="bg-white rounded-xl flex items-center gap-6 p-4 w-full max-w-3xl shadow-md">
-            <Image src="/seconddivimg2.png" alt="Camp Group" width={160} height={100} className="rounded-lg object-contain w-[160px] h-[100px]" />
+            <Image src="/seconddivimg2.png" alt="Camp Group" width={160} height={100} className="rounded-lg object-contain w-[160px] h-[150px]" />
             <div>
               <h3 className="text-xl font-bold text-black">Violet Palmer</h3>
               <a href="#" className="text-[#2196F3] text-sm font-medium">Program Director</a>
