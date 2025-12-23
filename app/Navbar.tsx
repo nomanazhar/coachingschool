@@ -1,9 +1,11 @@
 'use client'
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
   return (
     <nav className="sticky top-0 w-full h-[60px] flex items-center justify-between bg-white shadow z-50 px-4 sm:px-[55px] py-2 sm:py-[10px]">
       <div className="flex items-center gap-2">
@@ -16,7 +18,7 @@ export default function Navbar() {
       {/* Desktop/Tablet Buttons */}
       <div className="hidden sm:flex gap-2">
         <Button variant="ghost" className="font-medium px-4 py-2">Login</Button>
-        <Button className="font-medium px-4 py-2">Register</Button>
+        <Button className="font-medium px-4 py-2" onClick={() => router.push('/signup')}>Register</Button>
       </div>
       {/* Mobile Hamburger */}
       <div className="sm:hidden flex items-center">
@@ -33,7 +35,7 @@ export default function Navbar() {
         {menuOpen && (
           <div className="absolute top-[40px] right-4 bg-white shadow-lg rounded-lg flex flex-col gap-2 p-2 z-50 min-w-[60px]">
             <Button variant="ghost" className="font-medium w-full" onClick={() => setMenuOpen(false)}>Login</Button>
-            <Button className="font-medium w-full" onClick={() => setMenuOpen(false)}>Register</Button>
+            <Button className="font-medium w-full" onClick={() => { setMenuOpen(false); router.push('/signup'); }}>Register</Button>
           </div>
         )}
       </div>
