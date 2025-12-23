@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-[#F8F8F8] min-h-screen w-full font-sans">
+    <div className="bg-[#F8F8F8] min-h-screen w-full font-sans no-scrollbar">
       <Navbar />
       {/* First Section */}
-      <section className="w-full max-w-screen-2xl mx-auto flex items-center justify-between gap-10 px-[63px] py-[100px]" style={{height:342}}>
+      <section className="w-full max-w-screen-2xl mx-auto flex items-center justify-between gap-10 px-[63px] py-[100px]" style={{height:332}}>
         <div className="flex-1 flex flex-col justify-center pl-4">
           <h1 className="text-[36px] font-bold leading-tight text-black mb-6">Basics Referee School</h1>
           <p className="text-lg text-zinc-700 mb-8 max-w-[600px]">
@@ -15,7 +15,7 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <Button className="px-6 py-2 text-base font-medium">Register For Camp</Button>
-            <Button variant="outline" className="px-6 py-2 text-base font-medium">Sign In</Button>
+            <Button variant="outline" className="px-6 py-2 text-base font-medium bg-[#1C5174] !text-white">Sign In</Button>
           </div>
         </div>
         <div className="flex-1 flex justify-end items-center pr-8 ">
@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </section>
       {/* Second Section */}
-      <section className="w-full max-w-screen-2xl mx-auto flex flex-col items-center justify-center gap-6 bg-[#757575]" style={{height:338}}>
+      <section className="w-full max-w-screen-2xl mx-auto flex flex-col items-center justify-center gap-6 bg-[#757575]" style={{height:320}}>
         <div className="w-full max-w-4xl  rounded-xl flex flex-col items-center justify-center px-4 py-6 mx-auto" style={{background:'rgba(0,0,0,0)', boxSizing:'border-box'}}>
           <h2 className="text-2xl font-semibold text-white text-center mb-2">Learn from the Best</h2>
           <p className="text-lg text-white text-center mb-4">
